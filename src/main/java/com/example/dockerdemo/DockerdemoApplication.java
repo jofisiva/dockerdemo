@@ -20,6 +20,6 @@ class DockerDemo {
 
 	@GetMapping
 	public String dockerDemo() {
-		return "Docker Demo Test Build";
+		return "Docker1 Demo Test Build";
 	}
 }
