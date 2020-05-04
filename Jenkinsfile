@@ -5,7 +5,7 @@ stages {
   stage('Compile Stage') {
 
    steps {
-   withMaven (maven:'MAVEN') {
+   withMaven(maven:'MAVEN') {
      sh 'mvn clean compile'
     }
     }
@@ -13,7 +13,7 @@ stages {
 
     stage('Test Stage') {
     steps {
-    withMaven (maven:'MAVEN') {
+    withMaven(maven:'MAVEN') {
         sh 'mvn test'
         }
        }
@@ -21,7 +21,7 @@ stages {
 
     stage('Deploy Stage') {
     steps {
-    withMaven (maven:'MAVEN') {
+    withMaven(maven:'MAVEN') {
     sh 'mvn deploy'
     }
     }
